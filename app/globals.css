@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: var(--off-white);
+  background-color: var(--dark);
+}
+
+h1 {
+  color: var(--green);
+  font-size: var(--font-size-lg);
+}
+
+p {
+  font-size: var(--font-size-md);
+}
+
+p,
+article,
+section {
+  line-height: 1.5;
+}
+
+:focus {
+  outline: 0.15rem dashed var(--off-white);
+  outline-offset: 0.25rem;
+}
+main:focus {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+nav {
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  height: auto;
+  left: 0;
+  padding: 1vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav a {
+  float: left;
+  color: #313236;
+  text-align: center;
+  padding: 1.5vh 1.5vh;
+  text-decoration: none;
+  font-size: 2vh;
+}
+
+nav a:hover {
+  color: blue;
+}
