@@ -1,5 +1,6 @@
 import styles from "./page.module.css";
 import { Roboto } from "next/font/google";
+
 const roboto = Roboto({
   weight: ["900"],
   subsets: ["latin"],
@@ -16,14 +17,20 @@ export default function Home() {
     <main className={`${mulish.className}`}>
       <div id="home" className={styles.cardgenBox}>
         <div className={styles.boxContent}>
-          <h1 className={`${roboto.className}`}>Full-Stack Web Developer</h1>
+          <h1 className={`${roboto.className}`}>Full-Stack Developer</h1>
           <p>
-            Hey there! I'm Aryan Vora, a full-stack web developer based in Santa
+            Hey there! I'm Aryan Vora, a full-stack developer based in Santa
             Cruz, CA.{" "}
           </p>
-          <a href="https://github.com/Aryan-Vora">
-            <img className={styles.icon} src="github-icon.svg"></img>{" "}
-          </a>
+          <div className="flex">
+            <a href="https://github.com/Aryan-Vora" className="mr-10">
+              <img className={styles.icon} src="github-icon.svg"></img>{" "}
+            </a>
+            <a href="resume.pdf">
+              <img className={styles.icon} src="resume.png"></img>{" "}
+            </a>
+          </div>
+
           <div className={styles.skills}>
             <ul>
               Skills
@@ -43,6 +50,13 @@ export default function Home() {
                 <img id="about" src="nextjs-icon.svg"></img>
               </li>
             </ul>
+            <ul>
+              <img src="java.png" className="mr-4 mt-2"></img>
+              <img src="python.png" className="mr-4 mt-2"></img>
+              <img src="C.svg" className="mr-4 mt-2"></img>
+              <img src="git.svg" className="mr-4 mt-2"></img>
+              <img src="unix.png" className="mr-4 mt-2"></img>
+            </ul>
           </div>
         </div>
         <img src="facecropped.png" className={styles.card}></img>
@@ -55,11 +69,11 @@ export default function Home() {
           <h2 className={styles.subheader}>About Me</h2>
           <p>
             Motivated and accomplished computer science student with a passion
-            for front-end development and a background in project leadership,
+            for full-stack development and a background in project leadership,
             hackathons, and tutoring. Seeking opportunities to leverage my
-            skills in web development, and other technologies to contribute to
-            innovative projects and make a positive impact in the field of
-            software development.
+            skills in full-stack development, and other technologies to
+            contribute to innovative projects and make a positive impact in the
+            field of software development.
           </p>
         </div>
       </div>
@@ -73,8 +87,8 @@ export default function Home() {
         <h1 className={`${roboto.className}`}>Aryan Vora</h1>
         <div className={styles.footerDescription}>
           <p>
-            A full-stack Web Developer seeking opportunities to leverage my
-            skills to contribute to innovative projects
+            A full-stack developer seeking opportunities to leverage my skills
+            to contribute to innovative projects
           </p>
         </div>
       </div>

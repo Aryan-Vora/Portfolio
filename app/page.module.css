@@ -57,9 +57,7 @@
   width: 100vh;
   position: flex;
 }
-.navbox {
-  height: 10vh;
-}
+
 .subheader {
   font-size: 3vh;
   font-weight: bold;
