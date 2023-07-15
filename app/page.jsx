@@ -27,7 +27,13 @@ export default function Home() {
               <img className={styles.icon} src="github-icon.svg"></img>{" "}
             </a>
             <a href="resume.pdf">
-              <img className={styles.icon} src="resume.png"></img>{" "}
+              <img
+                className={styles.icon}
+                src="resume.png"
+                rel="noreferrer noopener"
+                title="Resume"
+                target="_blank"
+              ></img>{" "}
             </a>
           </div>
 
@@ -46,9 +52,7 @@ export default function Home() {
               <li>
                 <img src="react.svg"></img>
               </li>
-              <li>
-                <img id="about" src="nextjs-icon.svg"></img>
-              </li>
+              <li></li>
             </ul>
             <ul>
               <img src="java.png" className="mr-4 mt-2"></img>

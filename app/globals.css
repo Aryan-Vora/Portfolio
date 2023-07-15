@@ -9,10 +9,16 @@
 }
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: auto;
 }
 body {
   color: var(--off-white);
   background-color: var(--dark);
+  height: 100vh;
 }
 
 h1 {
@@ -23,7 +29,11 @@ h1 {
 p {
   font-size: var(--font-size-md);
 }
-
+@media (max-width: 768px) {
+  p {
+    font-size: 2rem;
+  }
+}
 p,
 article,
 section {
