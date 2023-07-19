@@ -15,6 +15,11 @@ const mulish = Mulish({
 export default function Home() {
   return (
     <main className={`${mulish.className}`}>
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+      ></meta>
+
       <div id="home" className={styles.cardgenBox}>
         <div className={styles.boxContent}>
           <h1 className={`${roboto.className}`}>Full-Stack Developer</h1>
@@ -22,7 +27,7 @@ export default function Home() {
             Hey there! I'm Aryan Vora, a full-stack developer based in Santa
             Cruz, CA.{" "}
           </p>
-          <div className="flex">
+          <div className={styles.resume}>
             <a href="https://github.com/Aryan-Vora" className="mr-10">
               <img className={styles.icon} src="github-icon.svg"></img>{" "}
             </a>
@@ -63,12 +68,15 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <img src="facecropped.png" className={styles.card}></img>
+        <div className={styles.boxContent}>
+          <img src="facecropped.png" className={styles.card}></img>
+        </div>
       </div>
       <hr></hr>
       <div className={styles.cardgenBox}>
-        <img src="croppeddesk.jpg" className={styles.card}></img>
-
+        <div className={styles.boxContent}>
+          <img src="croppeddesk.jpg" className={styles.card}></img>
+        </div>
         <div className={styles.boxContent}>
           <h2 className={styles.subheader}>About Me</h2>
           <p>
@@ -82,11 +90,58 @@ export default function Home() {
         </div>
       </div>
       <hr></hr>
-      <div id="projects" className={styles.cardgenBox}>
+      <div className={styles.cardgenBox} id="projects">
         <div className={styles.boxContent}>
           <h2 className={styles.subheader}>Projects</h2>
+          <h3 className={styles.mobileprojectheader}> Platformer Game</h3>
+
+          <iframe
+            className={styles.project}
+            src="https://www.youtube.com/embed/GY6nHimEWpA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <div className={styles.desktop}>
+            <div className={styles.skills}>
+              <ul>
+                View Code:
+                <li>
+                  <a href="https://github.com/Aryan-Vora/Platformer">
+                    {" "}
+                    <img src="github-icon.svg"></img>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className={styles.boxContent}>
+          <div className={styles.mobile}>
+            <h3> Platformer Game</h3>
+            <p>
+              This game is fully complete with multiple levels, music, and sound
+              effects to enhance the overall gaming experience. By leveraging
+              the Processing (Java) framework, I ensured smooth graphics
+              rendering and responsive controls, creating a seamless and
+              enjoyable gameplay environment.
+            </p>
+            <div className={styles.skills}>
+              <ul>
+                View Source Code:
+                <li>
+                  <a href="https://github.com/Aryan-Vora/Platformer">
+                    {" "}
+                    <img src="github-icon.svg"></img>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
+
       <div className={styles.footer}>
         <h1 className={`${roboto.className}`}>Aryan Vora</h1>
         <div className={styles.footerDescription}>

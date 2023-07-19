@@ -47,6 +47,16 @@ section {
 main:focus {
   outline: none;
 }
+main {
+  scroll-behavior: smooth;
+
+  display: block;
+  height: 100%;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+  width: 100%;
+}
 
 img {
   max-width: 100%;
@@ -57,11 +67,9 @@ nav {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   display: flex;
   height: auto;
-  left: 0;
   padding: 1vh;
   position: fixed;
-  top: 0;
-  width: 100%;
+  width: 100vw;
 }
 
 nav a {

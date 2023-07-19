@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className="h-10">
       <nav>
-        <ul>
+        <ul id="myDIV">
           <Link rel="noopener" target="_self" href="#home">
             Home
           </Link>
