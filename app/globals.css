@@ -21,19 +21,6 @@ body {
   height: 100vh;
 }
 
-h1 {
-  color: var(--green);
-  font-size: var(--font-size-lg);
-}
-
-p {
-  font-size: var(--font-size-md);
-}
-@media (max-width: 768px) {
-  p {
-    font-size: 2rem;
-  }
-}
 p,
 article,
 section {
@@ -48,8 +35,6 @@ main:focus {
   outline: none;
 }
 main {
-  scroll-behavior: smooth;
-
   display: block;
   height: 100%;
   margin: 0;

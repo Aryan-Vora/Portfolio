@@ -1,0 +1,13 @@
+            <p>
+              This game is fully complete with multiple levels, music, and sound
+              effects to enhance the overall gaming experience. By leveraging
+              the Processing (Java) framework, I ensured smooth graphics
+              rendering and responsive controls, creating a seamless and
+              enjoyable gameplay environment.
+            </p>
+             <p>
+              I worked on ClassBooster, a proprietary algorithm to generate
+              smart seating charts. Specifically I led the frontend team and
+              personally built the authentication pages (login, signup, forgot
+              password, etc.) and the home page.
+            </p>

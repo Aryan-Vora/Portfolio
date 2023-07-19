@@ -1,5 +1,7 @@
+"use client";
 import styles from "./page.module.css";
 import { Roboto } from "next/font/google";
+import { useState } from "react";
 
 const roboto = Roboto({
   weight: ["900"],
@@ -13,6 +15,28 @@ const mulish = Mulish({
   variable: "--font-mulish",
 });
 export default function Home() {
+  const [imageCount, setImageCount] = useState(0);
+  const [imageName, setImageName] = useState("ClassBooster.png");
+  const [images, setImages] = useState([
+    "ClassBooster.png",
+    "classBoosterDash.png",
+  ]);
+  function nextImage() {
+    setImageCount(imageCount + 1);
+    if (imageCount == 1) {
+      setImageCount(0);
+    }
+    setImageName(images[imageCount]);
+    console.log(imageCount);
+  }
+  function prevImage() {
+    setImageCount(imageCount - 1);
+    if (imageCount == 0) {
+      setImageCount(1);
+    }
+    setImageName(images[imageCount]);
+    console.log(imageCount);
+  }
   return (
     <main className={`${mulish.className}`}>
       <meta
@@ -69,16 +93,18 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.boxContent}>
-          <img src="facecropped.png" className={styles.card}></img>
+          <img src="facecropped.png" className={styles.face}></img>
         </div>
       </div>
       <hr></hr>
+      <h2 className={styles.subheader}>About Me</h2>
+
       <div className={styles.cardgenBox}>
         <div className={styles.boxContent}>
           <img src="croppeddesk.jpg" className={styles.card}></img>
         </div>
+
         <div className={styles.boxContent}>
-          <h2 className={styles.subheader}>About Me</h2>
           <p>
             Motivated and accomplished computer science student with a passion
             for full-stack development and a background in project leadership,
@@ -90,58 +116,56 @@ export default function Home() {
         </div>
       </div>
       <hr></hr>
-      <div className={styles.cardgenBox} id="projects">
-        <div className={styles.boxContent}>
-          <h2 className={styles.subheader}>Projects</h2>
-          <h3 className={styles.mobileprojectheader}> Platformer Game</h3>
-
+      <h2 className={styles.subheader}>Projects</h2>
+      <div className={styles.tiles}>
+        <div className={styles.tile}>
+          <h2> Platformer Game</h2>
           <iframe
-            className={styles.project}
+            className={styles.video}
             src="https://www.youtube.com/embed/GY6nHimEWpA"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-          <div className={styles.desktop}>
-            <div className={styles.skills}>
-              <ul>
-                View Code:
-                <li>
-                  <a href="https://github.com/Aryan-Vora/Platformer">
-                    {" "}
-                    <img src="github-icon.svg"></img>
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <div className={styles.skills}>
+            <ul>
+              View Code:
+              <li>
+                <a href="https://github.com/Aryan-Vora/Platformer">
+                  {" "}
+                  <img src="github-icon.svg"></img>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div className={styles.boxContent}>
-          <div className={styles.mobile}>
-            <h3> Platformer Game</h3>
-            <p>
-              This game is fully complete with multiple levels, music, and sound
-              effects to enhance the overall gaming experience. By leveraging
-              the Processing (Java) framework, I ensured smooth graphics
-              rendering and responsive controls, creating a seamless and
-              enjoyable gameplay environment.
-            </p>
-            <div className={styles.skills}>
-              <ul>
-                View Source Code:
-                <li>
-                  <a href="https://github.com/Aryan-Vora/Platformer">
-                    {" "}
-                    <img src="github-icon.svg"></img>
-                  </a>
-                </li>
-              </ul>
-            </div>
+
+        <div className={styles.tile}>
+          <h2> ClassBooster</h2>
+          <div className={styles.slideshow}>
+            <img src={imageName} className={styles.slide}></img>
+            <button onClick={prevImage} className={styles.buttonRight}>
+              &#10094;
+            </button>
+            <button onClick={nextImage} className={styles.buttonLeft}>
+              &#10095;
+            </button>
+          </div>
+
+          <div className={styles.skills}>
+            <ul>
+              View Code:
+              <li>
+                <a href="https://github.com/anshgupta1234/WHS-CS-Classbooster">
+                  {" "}
+                  <img src="github-icon.svg"></img>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-
       <div className={styles.footer}>
         <h1 className={`${roboto.className}`}>Aryan Vora</h1>
         <div className={styles.footerDescription}>
