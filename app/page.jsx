@@ -19,7 +19,7 @@ export default function Home() {
   const [imageName, setImageName] = useState("ClassBooster.png");
   const [images, setImages] = useState([
     "ClassBooster.png",
-    "classBoosterDash.png",
+    "ClassBoosterDash.png",
   ]);
   function nextImage() {
     setImageCount(imageCount + 1);
