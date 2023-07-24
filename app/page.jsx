@@ -105,7 +105,7 @@ export default function Home() {
         </div>
 
         <div className={styles.boxContent}>
-          <p>
+          <p className={styles.description}>
             Motivated and accomplished computer science student with a passion
             for full-stack development and a background in project leadership,
             hackathons, and tutoring. Seeking opportunities to leverage my
@@ -119,7 +119,7 @@ export default function Home() {
       <h2 className={styles.subheader}>Projects</h2>
       <div className={styles.tiles}>
         <div className={styles.tile}>
-          <h2> Platformer Game</h2>
+          <h2> Platformer</h2>
           <iframe
             className={styles.video}
             src="https://www.youtube.com/embed/GY6nHimEWpA"

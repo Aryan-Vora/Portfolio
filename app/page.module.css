@@ -17,6 +17,7 @@
   font-size: 2rem;
   color: black;
 }
+
 .card {
   margin-bottom: 5vh;
   margin-top: 5vh;
@@ -29,12 +30,7 @@
   width: 40vh;
   height: 40vh;
 }
-@media (max-width: 800px) {
-  .card,
-  .face {
-    display: none;
-  }
-}
+
 .icon {
   margin-top: 4vh;
   margin-bottom: 4vh;
@@ -47,14 +43,7 @@
   text-align: left;
   font-size: 1.5rem;
 }
-@media (max-width: 800px) {
-  .boxContent {
-    display: block;
-    max-width: 75vw;
-    padding: 10px;
-    font-size: 0.75rem;
-  }
-}
+
 .projectContent {
   display: block;
   max-width: 35vw;
@@ -102,11 +91,7 @@
 .footer p {
   font-size: 2rem;
 }
-@media (max-width: 800px) {
-  .footer p {
-    font-size: 10px;
-  }
-}
+
 .resume {
   display: flex;
   max-width: 50vw;
@@ -177,4 +162,35 @@
   grid-row-gap: 0.5em;
   grid-column-gap: 1em; /*center the flexbox*/
   justify-content: center;
+}
+@media (min-width: 1000px) {
+  .description {
+    aspect-ratio: 12 / 7;
+    height: 25vh;
+    width: auto;
+    color: black;
+  }
+}
+@media (max-width: 800px) {
+  .boxContent {
+    display: block;
+    max-width: 75vw;
+    padding: 10px;
+    font-size: 0.75rem;
+  }
+  .footer p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 1400px) {
+  .boxContent {
+    display: block;
+    max-width: 75vw;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  .card,
+  .face {
+    display: none;
+  }
 }
