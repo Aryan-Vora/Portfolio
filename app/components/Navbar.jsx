@@ -6,13 +6,13 @@ const Navbar = () => {
     <div className="h-10">
       <nav>
         <ul id="myDIV">
-          <Link rel="noopener" target="_self" href="#home">
+          <Link rel="noopener" scroll={false} target="_self" href="#home">
             Home
           </Link>
-          <Link rel="noopener" target="_self" href="#about">
+          <Link rel="noopener" scroll={false} target="_self" href="#about">
             About
           </Link>
-          <Link rel="noopener" target="_self" href="#projects">
+          <Link rel="noopener" scroll={false} target="_self" href="#projects">
             Projects
           </Link>
           <Link

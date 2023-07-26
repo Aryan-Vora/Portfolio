@@ -55,14 +55,14 @@ export default function Home() {
         <div className={styles.boxContent}>
           <h1 className={`${roboto.className}`}>Full-Stack Developer</h1>
           <p>
-            Hey there! I'm Aryan Vora, a full-stack developer based in Santa
-            Cruz, CA.{" "}
+            Hey there! I'm Aryan Vora, a full-stack developer based in Fremont,
+            CA.{" "}
           </p>
           <div className={styles.resume}>
             <a href="https://github.com/Aryan-Vora" className="mr-10">
               <img className={styles.icon} src="github-icon.svg"></img>{" "}
             </a>
-            <a href="resume.pdf">
+            <a href="https://docs.google.com/document/d/1qmtQNpSrnrLX3E5e06g5YrIpJ8rbYwXaHMIDvM1xs68/edit?usp=sharing">
               <img
                 className={styles.icon}
                 src="resume.png"
@@ -70,6 +70,12 @@ export default function Home() {
                 title="Resume"
                 target="_blank"
               ></img>{" "}
+            </a>
+            <a
+              href="https://www.linkedin.com/in/aryan-vora-71a856187/"
+              className="ml-10"
+            >
+              <img className={styles.icon} src="linkedin.svg"></img>{" "}
             </a>
           </div>
 
@@ -95,7 +101,7 @@ export default function Home() {
               <img src="python.png" className="mr-4 mt-2"></img>
               <img src="C.svg" className="mr-4 mt-2"></img>
               <img src="git.svg" className="mr-4 mt-2"></img>
-              <img id="about" src="unix.png" className="mr-4 mt-2"></img>
+              <img src="unix.png" className="mr-4 mt-2"></img>
             </ul>
           </div>
         </div>
@@ -104,26 +110,30 @@ export default function Home() {
         </div>
       </div>
       <hr></hr>
-      <h2 className={styles.subheader}>About Me</h2>
-
-      <div className={styles.cardgenBox}>
-        <div className={styles.boxContent}>
-          <img src="croppeddesk.jpg" className={styles.card}></img>
-        </div>
-
-        <div className={styles.boxContent}>
-          <p className={styles.description}>
-            Motivated and accomplished computer science student with a passion
-            for full-stack development and a background in project leadership,
-            hackathons, and tutoring. Seeking opportunities to leverage my
-            skills in full-stack development, and other technologies to
-            contribute to innovative projects and make a positive impact in the
-            field of software development.
-          </p>
+      <h2 id="about" className={styles.subheader}>
+        About Me
+      </h2>
+      <div className={styles.shift}>
+        <div className={styles.cardgenBox}>
+          <div className={styles.boxContent}>
+            <img src="croppeddesk.jpg" className={styles.card}></img>
+          </div>
+          <div className={styles.boxContent}>
+            <p className={styles.description}>
+              Motivated and accomplished computer science student at UC Santa
+              Cruz with a passion for full-stack development and a background in
+              project leadership, hackathons, and tutoring. Seeking
+              opportunities to leverage my skills in full-stack development, and
+              other technologies to contribute to innovative projects and make a
+              positive impact in the field of software development.
+            </p>
+          </div>
         </div>
       </div>
-      <hr id="projects"></hr>
-      <h2 className={styles.subheader}>Projects</h2>
+      <hr></hr>
+      <h2 id="projects" className={styles.subheader}>
+        Projects
+      </h2>
       <div className={styles.tiles}>
         <div className={styles.tile}>
           <h2> Platformer</h2>
