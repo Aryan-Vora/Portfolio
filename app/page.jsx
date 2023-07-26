@@ -2,7 +2,7 @@
 import styles from "./page.module.css";
 import { Roboto } from "next/font/google";
 import { useState } from "react";
-
+import { useEffect } from "react";
 const roboto = Roboto({
   weight: ["900"],
   subsets: ["latin"],
@@ -15,28 +15,35 @@ const mulish = Mulish({
   variable: "--font-mulish",
 });
 export default function Home() {
-  const [imageCount, setImageCount] = useState(0);
-  const [imageName, setImageName] = useState("ClassBooster.png");
   const [images, setImages] = useState([
+    "ClassBoosterHome.png",
     "ClassBooster.png",
     "ClassBoosterDash.png",
   ]);
+  const [imageName, setImageName] = useState(images[0]);
+
+  const [imageCount, setImageCount] = useState(0);
   function nextImage() {
-    setImageCount(imageCount + 1);
-    if (imageCount == 1) {
+    setImageCount((previousState) => previousState + 1);
+    console.log(imageCount);
+
+    if (imageCount > images.length - 2) {
       setImageCount(0);
     }
     setImageName(images[imageCount]);
-    console.log(imageCount);
   }
   function prevImage() {
-    setImageCount(imageCount - 1);
-    if (imageCount == 0) {
-      setImageCount(1);
+    setImageCount((previousState) => previousState - 1);
+    console.log(imageCount);
+    if (imageCount < 1) {
+      setImageCount(images.length - 1);
     }
     setImageName(images[imageCount]);
-    console.log(imageCount);
   }
+  useEffect(() => {
+    nextImage();
+  }, []);
+
   return (
     <main className={`${mulish.className}`}>
       <meta
@@ -88,7 +95,7 @@ export default function Home() {
               <img src="python.png" className="mr-4 mt-2"></img>
               <img src="C.svg" className="mr-4 mt-2"></img>
               <img src="git.svg" className="mr-4 mt-2"></img>
-              <img src="unix.png" className="mr-4 mt-2"></img>
+              <img id="about" src="unix.png" className="mr-4 mt-2"></img>
             </ul>
           </div>
         </div>
@@ -115,7 +122,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <hr></hr>
+      <hr id="projects"></hr>
       <h2 className={styles.subheader}>Projects</h2>
       <div className={styles.tiles}>
         <div className={styles.tile}>
@@ -124,13 +131,12 @@ export default function Home() {
             className={styles.video}
             src="https://www.youtube.com/embed/GY6nHimEWpA"
             title="YouTube video player"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
           <div className={styles.skills}>
             <ul>
-              View Code:
+              <a href="https://github.com/Aryan-Vora/Platformer"> View Code:</a>
               <li>
                 <a href="https://github.com/Aryan-Vora/Platformer">
                   {" "}
@@ -155,7 +161,7 @@ export default function Home() {
 
           <div className={styles.skills}>
             <ul>
-              View Code:
+              <a href="https://github.com/Aryan-Vora/Platformer"> View Code:</a>
               <li>
                 <a href="https://github.com/anshgupta1234/WHS-CS-Classbooster">
                   {" "}
