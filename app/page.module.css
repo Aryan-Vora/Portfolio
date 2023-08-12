@@ -1,3 +1,7 @@
+.top {
+  margin-top: 5vh;
+}
+
 .cardgenBox {
   display: flex;
   align-items: center;
@@ -11,7 +15,9 @@
   margin-bottom: 1vh;
   font-size: 3rem;
   color: black;
+  text-align: center;
 }
+
 .cardgenBox h3 {
   margin-bottom: 1vh;
   font-size: 2rem;
@@ -43,26 +49,25 @@
 }
 
 .skills {
-  height: 8vh;
   margin-top: 3vh;
-  align-items: center;
-  max-width: 50vw;
-  display: block;
 }
 .skills ul {
-  font-size: 3vh;
-  font-weight: bold;
   display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  font-weight: bold;
   padding: 0;
 }
 .skills li {
   margin-left: 2vw;
-  height: 3vh;
-  padding: 0;
 }
 .skills img {
-  height: 4.1vh;
+  height: 2.75rem;
+  width: 2.75rem;
 }
+
 .subheader {
   font-size: 2rem;
   font-weight: bold;
@@ -85,7 +90,7 @@
 
 .resume {
   display: flex;
-  max-width: 50vw;
+  justify-content: center;
 }
 .video {
   margin-top: 3vh;
@@ -174,6 +179,19 @@
   .footer p {
     font-size: 10px;
   }
+  .cardgenBox p {
+    text-align: center;
+  }
+  .cardgenBox {
+    text-align: center;
+  }
+  .skills ul {
+    font-size: 1.5rem;
+  }
+  .skills img {
+    height: 2rem;
+    width: 2rem;
+  }
 }
 @media (max-width: 1400px) {
   .boxContent {
@@ -182,9 +200,12 @@
     padding: 10px;
     font-size: 1rem;
   }
-
+  .cardgenBox p {
+    text-align: center;
+  }
   .card,
-  .face {
+  .face,
+  .boxContent2 {
     display: none;
   }
 }

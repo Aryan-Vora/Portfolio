@@ -50,7 +50,7 @@ export default function Home() {
         name="viewport"
         content="width=device-width, initial-scale=1"
       ></meta>
-
+      <div className={styles.top}></div>
       <div id="home" className={styles.cardgenBox}>
         <div className={styles.boxContent}>
           <h1 className={`${roboto.className}`}>Full-Stack Developer</h1>
@@ -94,19 +94,20 @@ export default function Home() {
               <li>
                 <img src="react.svg"></img>
               </li>
-              <li></li>
-            </ul>
-            <ul>
-              <img src="java.png" className="mr-4 mt-2"></img>
-              <img src="python.png" className="mr-4 mt-2"></img>
-              <img src="C.svg" className="mr-4 mt-2"></img>
-              <img src="git.svg" className="mr-4 mt-2"></img>
-              <img src="unix.png" className="mr-4 mt-2"></img>
+              <li>
+                <img src="java.svg"></img>
+              </li>
+              <li>
+                <img src="python.svg"></img>
+              </li>
+              <li>
+                <img src="C.svg"></img>
+              </li>
+              <li>
+                <img src="git.svg"></img>
+              </li>
             </ul>
           </div>
-        </div>
-        <div className={styles.boxContent}>
-          <img src="facecropped.png" className={styles.face}></img>
         </div>
       </div>
       <hr></hr>
@@ -115,7 +116,7 @@ export default function Home() {
       </h2>
       <div className={styles.shift}>
         <div className={styles.cardgenBox}>
-          <div className={styles.boxContent}>
+          <div className={styles.boxContent2}>
             <img src="croppeddesk.jpg" className={styles.card}></img>
           </div>
           <div className={styles.boxContent}>
@@ -134,54 +135,62 @@ export default function Home() {
       <h2 id="projects" className={styles.subheader}>
         Projects
       </h2>
-      <div className={styles.tiles}>
-        <div className={styles.tile}>
-          <h2> Platformer</h2>
-          <iframe
-            className={styles.video}
-            src="https://www.youtube.com/embed/GY6nHimEWpA"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
-          <div className={styles.skills}>
-            <ul>
-              <a href="https://github.com/Aryan-Vora/Platformer"> View Code:</a>
-              <li>
+      <div className={styles.shift}>
+        <div className={styles.tiles}>
+          <div className={styles.tile}>
+            <h2> Platformer</h2>
+            <iframe
+              className={styles.video}
+              src="https://www.youtube.com/embed/GY6nHimEWpA"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+            <div className={styles.skills}>
+              <ul>
                 <a href="https://github.com/Aryan-Vora/Platformer">
                   {" "}
-                  <img src="github-icon.svg"></img>
+                  View Code:
                 </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className={styles.tile}>
-          <h2> ClassBooster</h2>
-          <div className={styles.slideshow}>
-            <img src={imageName} className={styles.slide}></img>
-            <button onClick={prevImage} className={styles.buttonRight}>
-              &#10094;
-            </button>
-            <button onClick={nextImage} className={styles.buttonLeft}>
-              &#10095;
-            </button>
+                <li>
+                  <a href="https://github.com/Aryan-Vora/Platformer">
+                    {" "}
+                    <img src="github-icon.svg"></img>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div className={styles.skills}>
-            <ul>
-              <a href="https://github.com/Aryan-Vora/Platformer"> View Code:</a>
-              <li>
-                <a href="https://github.com/anshgupta1234/WHS-CS-Classbooster">
+          <div className={styles.tile}>
+            <h2> ClassBooster</h2>
+            <div className={styles.slideshow}>
+              <img src={imageName} className={styles.slide}></img>
+              <button onClick={prevImage} className={styles.buttonRight}>
+                &#10094;
+              </button>
+              <button onClick={nextImage} className={styles.buttonLeft}>
+                &#10095;
+              </button>
+            </div>
+            <div className={styles.skills}>
+              <ul>
+                <a href="https://github.com/Aryan-Vora/Platformer">
                   {" "}
-                  <img src="github-icon.svg"></img>
+                  View Code:
                 </a>
-              </li>
-            </ul>
+                <li>
+                  <a href="https://github.com/anshgupta1234/WHS-CS-Classbooster">
+                    {" "}
+                    <img src="github-icon.svg"></img>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+
       <div className={styles.footer}>
         <h1 className={`${roboto.className}`}>Aryan Vora</h1>
         <div className={styles.footerDescription}>
