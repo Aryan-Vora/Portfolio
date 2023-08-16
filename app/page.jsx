@@ -135,7 +135,7 @@ export default function Home() {
       <h2 id="projects" className={styles.subheader}>
         Projects
       </h2>
-      <div className={styles.shift}>
+      <div className={styles.shift2}>
         <div className={styles.tiles}>
           <div className={styles.tile}>
             <h2> Platformer</h2>
@@ -175,12 +175,30 @@ export default function Home() {
             </div>
             <div className={styles.skills}>
               <ul>
-                <a href="https://github.com/Aryan-Vora/Platformer">
+                <a href="https://github.com/anshgupta1234/WHS-CS-Classbooster">
                   {" "}
                   View Code:
                 </a>
                 <li>
                   <a href="https://github.com/anshgupta1234/WHS-CS-Classbooster">
+                    {" "}
+                    <img src="github-icon.svg"></img>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className={styles.tile}>
+            <h2>AI Notetaker</h2>
+            <img className={styles.video} src="notetaker.png"></img>
+            <div className={styles.skills}>
+              <ul>
+                <a href="https://github.com/Aryan-Vora/Notetaker">
+                  {" "}
+                  View Code:
+                </a>
+                <li>
+                  <a href="https://github.com/Aryan-Vora/Notetaker">
                     {" "}
                     <img src="github-icon.svg"></img>
                   </a>

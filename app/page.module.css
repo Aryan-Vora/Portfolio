@@ -97,6 +97,7 @@
   width: 40vh;
   height: 30vh;
   margin-bottom: 3vh;
+  aspect-ratio: 4/3;
 }
 .slideshow {
   position: relative;
@@ -142,11 +143,14 @@
 }
 
 .tile {
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 5vh;
   padding: 10px;
   margin-left: 3vw;
   margin-right: 3vw;
+  width: 40vh;
+  aspect-ratio: 4/3;
 }
 .tile h2 {
   font-size: 2rem;
@@ -193,7 +197,7 @@
     width: 2rem;
   }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1350px) {
   .boxContent {
     display: block;
     max-width: 75vw;
@@ -209,8 +213,11 @@
     display: none;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1350px) {
   .shift {
     padding-right: 10rem;
+  }
+  .shift2 {
+    padding-right: 5rem;
   }
 }
