@@ -190,7 +190,7 @@ export default function Home() {
           </div>
           <div className={styles.tile}>
             <h2>AI Notetaker</h2>
-            <img className={styles.video} src="notetaker.png"></img>
+            <img className={styles.video} src="Notetaker.png"></img>
             <div className={styles.skills}>
               <ul>
                 <a href="https://github.com/Aryan-Vora/Notetaker">
