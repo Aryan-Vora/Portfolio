@@ -164,7 +164,9 @@
   grid-column-gap: 1em; /*center the flexbox*/
   justify-content: center;
 }
-
+.footerDescription {
+  max-width: 70vw;
+}
 @media (min-width: 1000px) {
   .description {
     max-width: 40vh;
