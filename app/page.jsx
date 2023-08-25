@@ -62,7 +62,7 @@ export default function Home() {
             <a href="https://github.com/Aryan-Vora" className="mr-10">
               <img className={styles.icon} src="github-icon.svg"></img>{" "}
             </a>
-            <a href="https://docs.google.com/document/d/1qmtQNpSrnrLX3E5e06g5YrIpJ8rbYwXaHMIDvM1xs68/edit?usp=sharing">
+            <a href="latexresume.pdf">
               <img
                 className={styles.icon}
                 src="resume.png"
@@ -116,9 +116,6 @@ export default function Home() {
       </h2>
       <div className={styles.shift}>
         <div className={styles.cardgenBox}>
-          <div className={styles.boxContent2}>
-            <img src="croppeddesk.jpg" className={styles.card}></img>
-          </div>
           <div className={styles.boxContent}>
             <p className={styles.description}>
               Motivated and accomplished computer science student at UC Santa
@@ -128,6 +125,9 @@ export default function Home() {
               other technologies to contribute to innovative projects and make a
               positive impact in the field of software development.
             </p>
+          </div>
+          <div className={styles.boxContent2}>
+            <img src="croppeddesk.jpg" className={styles.card}></img>
           </div>
         </div>
       </div>

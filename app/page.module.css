@@ -217,7 +217,7 @@
 }
 @media (min-width: 1350px) {
   .shift {
-    padding-right: 10rem;
+    margin-right: 5rem;
   }
   .shift2 {
     padding-right: 5rem;
