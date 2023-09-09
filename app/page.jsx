@@ -206,6 +206,24 @@ export default function Home() {
               </ul>
             </div>
           </div>
+          <div className={styles.tile}>
+            <h2>Price Comparison API</h2>
+            <img className={styles.video} src="explorations.png"></img>
+            <div className={styles.skills}>
+              <ul>
+                <a href="https://explorations-246264175e3c.herokuapp.com/">
+                  {" "}
+                  View Page:
+                </a>
+                <li>
+                  <a href="https://explorations-246264175e3c.herokuapp.com/">
+                    {" "}
+                    <img src="github-icon.svg"></img>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
 
