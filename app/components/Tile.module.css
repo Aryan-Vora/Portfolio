@@ -1,0 +1,92 @@
+.tile {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5vh;
+  padding: 10px;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  width: 40vh;
+  aspect-ratio: 4/3;
+}
+
+.tile ul {
+  display: flex;
+  flex-direction: row;
+}
+.tile h2 {
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+}
+
+.slideshow {
+  position: relative;
+  width: 40vh;
+}
+
+.slide {
+  margin-top: 3vh;
+  height: 30vh;
+  margin-bottom: 3vh;
+}
+.video {
+  margin-top: 3vh;
+  width: 40vh;
+  height: 30vh;
+  margin-bottom: 3vh;
+  aspect-ratio: 4/3;
+}
+.buttonRight {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buttonRight:hover {
+  background-color: black;
+}
+
+.buttonLeft {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buttonLeft:hover {
+  background-color: black;
+}
+
+.skills {
+  margin-top: 3vh;
+}
+
+.skills ul {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0;
+}
+
+.skills li {
+  margin-left: 2vw;
+}
+
+.skills img {
+  height: 2.75rem;
+  width: 2.75rem;
+}

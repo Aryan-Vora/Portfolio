@@ -1,49 +1,21 @@
 "use client";
 import styles from "./page.module.css";
 import { Roboto } from "next/font/google";
-import { useState } from "react";
-import { useEffect } from "react";
+import { Mulish } from "next/font/google";
+import Tile from "./components/Tile";
+import Slideshow from "./components/Slideshow";
+import Video from "./components/Video";
 const roboto = Roboto({
   weight: ["900"],
   subsets: ["latin"],
   variable: "--font-roboto",
 });
-import { Mulish } from "next/font/google";
 const mulish = Mulish({
   weight: ["500"],
   subsets: ["latin"],
   variable: "--font-mulish",
 });
 export default function Home() {
-  const [images, setImages] = useState([
-    "ClassBoosterHome.png",
-    "ClassBooster.png",
-    "ClassBoosterDash.png",
-  ]);
-  const [imageName, setImageName] = useState(images[0]);
-
-  const [imageCount, setImageCount] = useState(0);
-  function nextImage() {
-    setImageCount((previousState) => previousState + 1);
-    console.log(imageCount);
-
-    if (imageCount > images.length - 2) {
-      setImageCount(0);
-    }
-    setImageName(images[imageCount]);
-  }
-  function prevImage() {
-    setImageCount((previousState) => previousState - 1);
-    console.log(imageCount);
-    if (imageCount < 1) {
-      setImageCount(images.length - 1);
-    }
-    setImageName(images[imageCount]);
-  }
-  useEffect(() => {
-    nextImage();
-  }, []);
-
   return (
     <main className={`${mulish.className}`}>
       <meta
@@ -142,117 +114,34 @@ export default function Home() {
       </h2>
       <div className={styles.shift2}>
         <div className={styles.tiles}>
-          <div className={styles.tile}>
-            <h2> Platformer</h2>
-            <iframe
-              className={styles.video}
-              src="https://www.youtube.com/embed/GY6nHimEWpA"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
-            <div className={styles.skills}>
-              <ul>
-                <a
-                  href="https://github.com/Aryan-Vora/Platformer"
-                  target="_blank"
-                >
-                  {" "}
-                  View Code:
-                </a>
-                <li>
-                  <a
-                    href="https://github.com/Aryan-Vora/Platformer"
-                    target="_blank"
-                  >
-                    {" "}
-                    <img src="github-icon.svg"></img>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className={styles.tile}>
-            <h2> ClassBooster</h2>
-            <div className={styles.slideshow}>
-              <img src={imageName} className={styles.slide}></img>
-              <button onClick={prevImage} className={styles.buttonRight}>
-                &#10094;
-              </button>
-              <button onClick={nextImage} className={styles.buttonLeft}>
-                &#10095;
-              </button>
-            </div>
-            <div className={styles.skills}>
-              <ul>
-                <a
-                  href="https://github.com/anshgupta1234/WHS-CS-Classbooster"
-                  target="_blank"
-                >
-                  {" "}
-                  View Code:
-                </a>
-                <li>
-                  <a
-                    href="https://github.com/anshgupta1234/WHS-CS-Classbooster"
-                    target="_blank"
-                  >
-                    {" "}
-                    <img src="github-icon.svg"></img>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className={styles.tile}>
-            <h2>AI Notetaker</h2>
-            <img className={styles.video} src="Notetaker.png"></img>
-            <div className={styles.skills}>
-              <ul>
-                <a
-                  href="https://github.com/Aryan-Vora/Notetaker"
-                  target="_blank"
-                >
-                  {" "}
-                  View Code:
-                </a>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://github.com/Aryan-Vora/Notetaker"
-                  >
-                    {" "}
-                    <img src="github-icon.svg"></img>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className={styles.tile}>
-            <h2>Price Comparison API</h2>
-            <img className={styles.video} src="explorations.png"></img>
-            <div className={styles.skills}>
-              <ul>
-                <a
-                  target="_blank"
-                  href="https://price-compare-ht5j.onrender.com/"
-                >
-                  {" "}
-                  View Page:
-                </a>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://price-compare-ht5j.onrender.com/"
-                  >
-                    {" "}
-                    <img src="github-icon.svg"></img>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <Video
+            imageSrc="https://www.youtube.com/embed/GY6nHimEWpA"
+            name="Platformer"
+            link="https://github.com/Aryan-Vora/Platformer"
+            viewtype="Code"
+          />{" "}
+          <Slideshow
+            name="ClassBooster"
+            imageSrc="https://github.com/anshgupta1234/WHS-CS-ClassBooster"
+            images={[
+              "ClassBoosterHome.png",
+              "ClassBooster.png",
+              "ClassBoosterDash.png",
+            ]}
+            viewtype="Code"
+          />
+          <Tile
+            name="AI Notetaker"
+            imageSrc="Notetaker.png"
+            link="https://github.com/Aryan-Vora/Notetaker"
+            viewtype="Code"
+          />
+          <Tile
+            name="Price Comparison API"
+            imageSrc="explorations.png"
+            link="https://price-compare-ht5j.onrender.com/"
+            viewtype="Page"
+          />
         </div>
       </div>
 
