@@ -59,10 +59,14 @@ export default function Home() {
             CA.{" "}
           </p>
           <div className={styles.resume}>
-            <a href="https://github.com/Aryan-Vora" className="mr-10">
+            <a
+              href="https://github.com/Aryan-Vora"
+              className="mr-10"
+              target="_blank"
+            >
               <img className={styles.icon} src="github-icon.svg"></img>{" "}
             </a>
-            <a href="latexresume.pdf">
+            <a href="latexresume.pdf" target="_blank">
               <img
                 className={styles.icon}
                 src="resume.png"
@@ -74,6 +78,7 @@ export default function Home() {
             <a
               href="https://www.linkedin.com/in/aryan-vora-71a856187/"
               className="ml-10"
+              target="_blank"
             >
               <img className={styles.icon} src="linkedin.svg"></img>{" "}
             </a>
@@ -148,12 +153,18 @@ export default function Home() {
             ></iframe>
             <div className={styles.skills}>
               <ul>
-                <a href="https://github.com/Aryan-Vora/Platformer">
+                <a
+                  href="https://github.com/Aryan-Vora/Platformer"
+                  target="_blank"
+                >
                   {" "}
                   View Code:
                 </a>
                 <li>
-                  <a href="https://github.com/Aryan-Vora/Platformer">
+                  <a
+                    href="https://github.com/Aryan-Vora/Platformer"
+                    target="_blank"
+                  >
                     {" "}
                     <img src="github-icon.svg"></img>
                   </a>
@@ -175,12 +186,18 @@ export default function Home() {
             </div>
             <div className={styles.skills}>
               <ul>
-                <a href="https://github.com/anshgupta1234/WHS-CS-Classbooster">
+                <a
+                  href="https://github.com/anshgupta1234/WHS-CS-Classbooster"
+                  target="_blank"
+                >
                   {" "}
                   View Code:
                 </a>
                 <li>
-                  <a href="https://github.com/anshgupta1234/WHS-CS-Classbooster">
+                  <a
+                    href="https://github.com/anshgupta1234/WHS-CS-Classbooster"
+                    target="_blank"
+                  >
                     {" "}
                     <img src="github-icon.svg"></img>
                   </a>
@@ -193,12 +210,18 @@ export default function Home() {
             <img className={styles.video} src="Notetaker.png"></img>
             <div className={styles.skills}>
               <ul>
-                <a href="https://github.com/Aryan-Vora/Notetaker">
+                <a
+                  href="https://github.com/Aryan-Vora/Notetaker"
+                  target="_blank"
+                >
                   {" "}
                   View Code:
                 </a>
                 <li>
-                  <a href="https://github.com/Aryan-Vora/Notetaker">
+                  <a
+                    target="_blank"
+                    href="https://github.com/Aryan-Vora/Notetaker"
+                  >
                     {" "}
                     <img src="github-icon.svg"></img>
                   </a>
@@ -211,12 +234,18 @@ export default function Home() {
             <img className={styles.video} src="explorations.png"></img>
             <div className={styles.skills}>
               <ul>
-                <a href="https://price-compare-ht5j.onrender.com/">
+                <a
+                  target="_blank"
+                  href="https://price-compare-ht5j.onrender.com/"
+                >
                   {" "}
                   View Page:
                 </a>
                 <li>
-                  <a href="https://price-compare-ht5j.onrender.com/">
+                  <a
+                    target="_blank"
+                    href="https://price-compare-ht5j.onrender.com/"
+                  >
                     {" "}
                     <img src="github-icon.svg"></img>
                   </a>
