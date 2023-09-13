@@ -211,12 +211,12 @@ export default function Home() {
             <img className={styles.video} src="explorations.png"></img>
             <div className={styles.skills}>
               <ul>
-                <a href="https://explorations-246264175e3c.herokuapp.com/">
+                <a href="https://price-compare-ht5j.onrender.com/">
                   {" "}
                   View Page:
                 </a>
                 <li>
-                  <a href="https://explorations-246264175e3c.herokuapp.com/">
+                  <a href="https://price-compare-ht5j.onrender.com/">
                     {" "}
                     <img src="github-icon.svg"></img>
                   </a>
