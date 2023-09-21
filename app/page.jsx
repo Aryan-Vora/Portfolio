@@ -122,7 +122,7 @@ export default function Home() {
           />{" "}
           <Slideshow
             name="ClassBooster"
-            imageSrc="https://github.com/anshgupta1234/WHS-CS-ClassBooster"
+            link="https://github.com/anshgupta1234/WHS-CS-ClassBooster"
             images={[
               "ClassBoosterHome.png",
               "ClassBooster.png",
@@ -140,7 +140,7 @@ export default function Home() {
             name="Price Comparison API"
             imageSrc="explorations.png"
             link="https://price-compare-ht5j.onrender.com/"
-            viewtype="Page"
+            viewtype="Demo"
           />
         </div>
       </div>
