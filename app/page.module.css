@@ -209,6 +209,8 @@
   .cardgenBox p {
     text-align: center;
   }
+}
+@media (max-width: 1200px) {
   .card,
   .face,
   .boxContent2 {

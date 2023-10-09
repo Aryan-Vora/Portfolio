@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Tile.module.css";
-
 function Tile({ name, imageSrc, link, viewtype }) {
   return (
     <div className={styles.tile}>
