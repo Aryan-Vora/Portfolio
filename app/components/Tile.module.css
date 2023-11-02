@@ -22,6 +22,7 @@
 .slideshow {
   position: relative;
   width: 40vh;
+  z-index: -1;
 }
 
 .slide {

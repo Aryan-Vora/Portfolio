@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="h-10">
+    <div className="h-10 z-50">
       <nav>
         <ul id="myDIV">
           <Link rel="noopener" scroll={false} target="_self" href="#home">

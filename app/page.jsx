@@ -114,33 +114,29 @@ export default function Home() {
       </h2>
       <div className={styles.shift2}>
         <div className={styles.tiles}>
+          <Tile
+            name="Receipt Scanner"
+            imageSrc="receipt-scanner.png"
+            viewtype={"Code"}
+          />
           <Video
             imageSrc="https://www.youtube.com/embed/GY6nHimEWpA"
             name="Platformer"
-            link="https://github.com/Aryan-Vora/Platformer"
             viewtype="Code"
           />{" "}
           <Slideshow
             name="ClassBooster"
-            link="https://github.com/anshgupta1234/WHS-CS-ClassBooster"
-            images={[
+            imageSrc={[
               "ClassBoosterHome.png",
               "ClassBooster.png",
               "ClassBoosterDash.png",
             ]}
-            viewtype="Code"
           />
+          <Tile name="AI Notetaker" imageSrc="Notetaker.png" viewtype="Code" />
           <Tile
-            name="AI Notetaker"
-            imageSrc="Notetaker.png"
-            link="https://github.com/Aryan-Vora/Notetaker"
-            viewtype="Code"
-          />
-          <Tile
-            name="Price Comparison API"
+            name="Price Compare API"
             imageSrc="explorations.png"
-            link="https://price-compare-ht5j.onrender.com/"
-            viewtype="Demo"
+            viewtype="Code"
           />
         </div>
       </div>

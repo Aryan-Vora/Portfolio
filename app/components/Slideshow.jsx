@@ -1,23 +1,16 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Tile.module.css"; // Import the CSS file
 import PropTypes from "prop-types";
-function Slideshow({ name, link, images, viewtype }) {
+function Slideshow({ name, link, imageSrc }) {
   const [imageCount, setImageCount] = useState(0);
-  const [imageName, setImageName] = useState(images[0]);
+  const [imageName, setImageName] = useState(imageSrc[0]);
 
   function nextImage() {
-    setImageCount((previousState) => (previousState + 1) % images.length);
+    setImageCount((previousState) => (previousState + 1) % imageSrc.length);
   }
-
-  function prevImage() {
-    setImageCount((previousState) =>
-      previousState === 0 ? images.length - 1 : previousState - 1
-    );
-  }
-
   useEffect(() => {
-    setImageName(images[imageCount]);
-  }, [imageCount, images]);
+    setImageName(imageSrc[imageCount]);
+  }, [imageCount, imageSrc]);
 
   useEffect(() => {
     const intervalId = setInterval(nextImage, 3000); // Auto-advance every 3 seconds
@@ -34,26 +27,27 @@ function Slideshow({ name, link, images, viewtype }) {
         <img src={imageName} className={styles.slide}></img>
       </div>
       <div className={styles.skills}>
-        <ul>
-          <li>
-            <a target="_blank" href={link}>
-              View {viewtype}:
-            </a>
-          </li>
-          <li>
-            <a target="_blank" href={link}>
-              <img src="github-icon.svg" alt="GitHub Icon"></img>
-            </a>
-          </li>
-        </ul>
+        {link && (
+          <ul>
+            <li>
+              <a target="_blank" href={link}>
+                View Code:
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href={link}>
+                <img src="github-icon.svg" alt="GitHub Icon"></img>
+              </a>
+            </li>
+          </ul>
+        )}
       </div>
     </div>
   );
 }
 Slideshow.propTypes = {
   name: PropTypes.string.isRequired,
-  imageSrc: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
-  viewtype: PropTypes.string.isRequired,
+  imageSrc: PropTypes.array.isRequired,
+  link: PropTypes.string,
 };
 export default Slideshow;
