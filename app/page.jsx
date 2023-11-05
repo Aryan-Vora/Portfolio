@@ -60,28 +60,25 @@ export default function Home() {
             <ul>
               Skills
               <li>
-                <img src="html-5.svg"></img>
-              </li>
-              <li>
-                <img src="css-3.svg"></img>
+                <img src="python.svg"></img>
               </li>
               <li>
                 <img src="javascript.svg"></img>
               </li>
               <li>
-                <img src="react.svg"></img>
-              </li>
-              <li>
                 <img src="java.svg"></img>
-              </li>
-              <li>
-                <img src="python.svg"></img>
               </li>
               <li>
                 <img src="C.svg"></img>
               </li>
               <li>
-                <img src="git.svg"></img>
+                <img src="react.svg"></img>
+              </li>
+              <li>
+                <img src="html-5.svg"></img>
+              </li>
+              <li>
+                <img src="css-3.svg"></img>
               </li>
             </ul>
           </div>
@@ -117,13 +114,8 @@ export default function Home() {
           <Tile
             name="Receipt Scanner"
             imageSrc="receipt-scanner.png"
-            viewtype={"Code"}
+            link="https://www.squeezeestore.com/"
           />
-          <Video
-            imageSrc="https://www.youtube.com/embed/GY6nHimEWpA"
-            name="Platformer"
-            viewtype="Code"
-          />{" "}
           <Slideshow
             name="ClassBooster"
             imageSrc={[
@@ -131,12 +123,18 @@ export default function Home() {
               "ClassBooster.png",
               "ClassBoosterDash.png",
             ]}
+            link="https://github.com/anshgupta1234/WHS-CS-ClassBooster"
           />
-          <Tile name="AI Notetaker" imageSrc="Notetaker.png" viewtype="Code" />
           <Tile
-            name="Price Compare API"
-            imageSrc="explorations.png"
-            viewtype="Code"
+            imageSrc="platformer.png"
+            name="Platformer"
+            link="https://github.com/Aryan-Vora/Platformer"
+          />{" "}
+          <Tile name="Price Compare API" imageSrc="explorations.png" />
+          <Tile
+            name="AI Notetaker"
+            imageSrc="Notetaker.png"
+            link="https://github.com/Aryan-Vora/Notetaker"
           />
         </div>
       </div>

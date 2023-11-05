@@ -91,3 +91,10 @@
   height: 2.75rem;
   width: 2.75rem;
 }
+.tile a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+}

@@ -5,7 +5,13 @@ import styles from "./Tile.module.css";
 function Video({ name, imageSrc, link }) {
   return (
     <div className={styles.tile}>
-      <h2>{name}</h2>
+      {link ? (
+        <a target="_blank" href="link">
+          {name}
+        </a>
+      ) : (
+        <a>{name}</a>
+      )}{" "}
       <iframe
         className={styles.video}
         src={imageSrc}
@@ -13,22 +19,6 @@ function Video({ name, imageSrc, link }) {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
       ></iframe>
-      <div className={styles.skills}>
-        {link && (
-          <ul>
-            <li>
-              <a target="_blank" href={link}>
-                View Code:
-              </a>
-            </li>
-            <li>
-              <a target="_blank" href={link}>
-                <img src="github-icon.svg" alt="GitHub Icon"></img>
-              </a>
-            </li>
-          </ul>
-        )}
-      </div>
     </div>
   );
 }
@@ -36,7 +26,7 @@ function Video({ name, imageSrc, link }) {
 Video.propTypes = {
   name: PropTypes.string.isRequired,
   imageSrc: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
+  link: PropTypes.string,
 };
 
 export default Video;

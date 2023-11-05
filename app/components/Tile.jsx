@@ -4,25 +4,14 @@ import styles from "./Tile.module.css";
 function Tile({ name, imageSrc, link }) {
   return (
     <div className={styles.tile}>
-      <h2>{name}</h2>
+      {link ? (
+        <a target="_blank" href="link">
+          {name}
+        </a>
+      ) : (
+        <a>{name}</a>
+      )}
       <img className={styles.slide} src={imageSrc} alt={name}></img>
-
-      <div className={styles.skills}>
-        {link && (
-          <ul>
-            <li>
-              <a target="_blank" href={link}>
-                View Code:
-              </a>
-            </li>
-            <li>
-              <a target="_blank" href={link}>
-                <img src="github-icon.svg" alt="GitHub Icon"></img>
-              </a>
-            </li>
-          </ul>
-        )}
-      </div>
     </div>
   );
 }
@@ -30,7 +19,7 @@ function Tile({ name, imageSrc, link }) {
 Tile.propTypes = {
   name: PropTypes.string.isRequired,
   imageSrc: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
+  link: PropTypes.string,
 };
 
 export default Tile;

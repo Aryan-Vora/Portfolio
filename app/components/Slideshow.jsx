@@ -22,25 +22,15 @@ function Slideshow({ name, link, imageSrc }) {
 
   return (
     <div className={styles.tile}>
-      <h2> {name}</h2>
+      {link ? (
+        <a target="_blank" href="link">
+          {name}
+        </a>
+      ) : (
+        <a>{name}</a>
+      )}{" "}
       <div className={styles.slideshow}>
         <img src={imageName} className={styles.slide}></img>
-      </div>
-      <div className={styles.skills}>
-        {link && (
-          <ul>
-            <li>
-              <a target="_blank" href={link}>
-                View Code:
-              </a>
-            </li>
-            <li>
-              <a target="_blank" href={link}>
-                <img src="github-icon.svg" alt="GitHub Icon"></img>
-              </a>
-            </li>
-          </ul>
-        )}
       </div>
     </div>
   );
