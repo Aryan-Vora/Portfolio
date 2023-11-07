@@ -99,8 +99,7 @@ export default function Home() {
           <div className={styles.boxContent}>
             <p className={styles.description}>
               Motivated and accomplished computer science student at UC Santa
-              Cruz with a passion for full-stack development and a background in
-              project leadership, hackathons, and tutoring. Seeking
+              Cruz with a passion for full-stack development. Seeking
               opportunities to leverage my skills in full-stack development, and
               other technologies to contribute to innovative projects and make a
               positive impact in the field of software development.
