@@ -47,11 +47,18 @@ export default function Home() {
               ></img>{" "}
             </a>
             <a
+              href="https://medium.com/@AryanVora"
+              className="ml-10"
+              target="_blank"
+            >
+              <img className={styles.icon} src="medium.png"></img>{" "}
+            </a>
+            <a
               href="https://www.linkedin.com/in/aryanvora1/"
               className="ml-10"
               target="_blank"
             >
-              <img className={styles.icon} src="linkedin.svg"></img>{" "}
+              <img className={styles.icon} src="linkedin.png"></img>{" "}
             </a>
           </div>
 
