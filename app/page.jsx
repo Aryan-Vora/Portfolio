@@ -47,7 +47,7 @@ export default function Home() {
               ></img>{" "}
             </a>
             <a
-              href="https://www.linkedin.com/in/aryan-vora-71a856187/"
+              href="https://www.linkedin.com/in/aryanvora1/"
               className="ml-10"
               target="_blank"
             >

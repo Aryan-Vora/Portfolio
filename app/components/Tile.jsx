@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import styles from "./Tile.module.css";
 
-function Tile({ name, imageSrc, link }) {
+function Tile({ name, imageSrc, link, description }) {
   const [currentImage, setCurrentImage] = useState(null);
   const [isSlideshow, setIsSlideshow] = useState(
     Array.isArray(imageSrc) && imageSrc.length > 1
@@ -59,6 +59,7 @@ Tile.propTypes = {
     PropTypes.arrayOf(PropTypes.string),
   ]).isRequired,
   link: PropTypes.string.isRequired,
+  description: PropTypes.string,
 };
 
 export default Tile;
