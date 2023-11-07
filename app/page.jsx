@@ -3,8 +3,7 @@ import styles from "./page.module.css";
 import { Roboto } from "next/font/google";
 import { Mulish } from "next/font/google";
 import Tile from "./components/Tile";
-import Slideshow from "./components/Slideshow";
-import Video from "./components/Video";
+
 const roboto = Roboto({
   weight: ["900"],
   subsets: ["latin"],
@@ -116,7 +115,7 @@ export default function Home() {
             imageSrc="receipt-scanner.png"
             link="https://www.squeezeestore.com/"
           />
-          <Slideshow
+          <Tile
             name="ClassBooster"
             imageSrc={[
               "ClassBoosterHome.png",
@@ -130,7 +129,7 @@ export default function Home() {
             name="Platformer"
             link="https://github.com/Aryan-Vora/Platformer"
           />{" "}
-          <Tile name="Price Compare API" imageSrc="explorations.png" />
+          <Tile name="Price Compare API" imageSrc="explorations.png" link="" />
           <Tile
             name="AI Notetaker"
             imageSrc="Notetaker.png"

@@ -6,7 +6,7 @@ function Video({ name, imageSrc, link }) {
   return (
     <div className={styles.tile}>
       {link ? (
-        <a target="_blank" href="link">
+        <a target="_blank" href={link}>
           {name}
         </a>
       ) : (
@@ -14,9 +14,10 @@ function Video({ name, imageSrc, link }) {
       )}{" "}
       <iframe
         className={styles.video}
+        href={link}
         src={imageSrc}
         title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
         allowFullScreen
       ></iframe>
     </div>
