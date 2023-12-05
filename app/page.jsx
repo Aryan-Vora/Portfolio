@@ -61,8 +61,8 @@ export default function Home() {
               <img className={styles.icon} src="linkedin.png"></img>{" "}
             </a>
           </div>
-
-          <div className={styles.skills}>
+          {/*
+            <div className={styles.skills}>
             <ul>
               Skills
               <li>
@@ -88,6 +88,7 @@ export default function Home() {
               </li>
             </ul>
           </div>
+            */}
         </div>
       </div>
       <hr></hr>
