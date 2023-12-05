@@ -15,6 +15,9 @@ const Navbar = () => {
           <Link rel="noopener" scroll={false} target="_self" href="#projects">
             Projects
           </Link>
+          <Link rel="noopener" scroll={false} target="_self" href="#blog">
+            Blog
+          </Link>
           <Link
             rel="noopener"
             target="_self"

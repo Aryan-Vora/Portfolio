@@ -1,0 +1,91 @@
+/* MediumCard.module.css */
+.card {
+  display: flex;
+  flex-direction: row; /* Ensures the image and text section are in a row */
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 80%;
+  align-items: stretch; /* Align items stretch to make the image and text section the same height */
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.articleImage {
+  min-height: 300px;
+  min-width: 300px;
+  object-fit: cover;
+  border-radius: 15px; /* Adjust border-radius to only the left corners */
+}
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  height: 300px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.date {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 16px;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 9; /* Limit text to three lines */
+  -webkit-box-orient: vertical;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column; /* Stack image and text on top of each other on smaller screens */
+    width: 90%; /* Increase width to fit smaller screens */
+  }
+
+  .articleImage {
+    width: auto; /* Allow the image to scale with the container */
+    border-radius: 8px 8px 0 0; /* Adjust border-radius to only the top corners */
+  }
+
+  .textSection {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card {
+    width: 85%; /* Adjust the width for tablets */
+  }
+
+  /* You can add more styles for tablet-specific adjustments here */
+}
+
+/* Large Screen Styles */
+@media (min-width: 1025px) {
+  .card {
+    width: 75%; /* Adjust the width for large screens */
+  }
+
+  .articleImage {
+    max-width: 250px; /* Adjust the max width for larger screens if necessary */
+  }
+
+  /* You can add more styles for large screen adjustments here */
+}
