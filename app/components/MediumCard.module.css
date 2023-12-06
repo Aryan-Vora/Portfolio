@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: row; /* Ensures the image and text section are in a row */
   background: #fff;
-  border-radius: 8px;
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
@@ -11,8 +10,8 @@
   margin-top: 30px;
   width: 80%;
   align-items: stretch; /* Align items stretch to make the image and text section the same height */
-  border: 1px solid #ddd;
-  padding: 10px;
+  padding-top: 40px;
+  border-top: 2px solid #ddd;
 }
 
 .articleImage {
