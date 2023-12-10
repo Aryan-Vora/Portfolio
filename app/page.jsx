@@ -144,12 +144,14 @@ export default function Home() {
           />
         </div>
       </div>
+      {/*
       <hr></hr>
-
+      
       <h2 id="blog" className={styles.subheader}>
         My Blog
       </h2>
       <MediumArticles />
+*/}
       <div className={styles.footer}>
         <h1 className={`${roboto.className}`}>Aryan Vora</h1>
         <div className={styles.footerDescription}>
@@ -159,7 +161,6 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <hr></hr>
     </main>
   );
 }
