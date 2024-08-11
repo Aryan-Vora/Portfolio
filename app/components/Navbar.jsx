@@ -15,15 +15,15 @@ const Navbar = () => {
           <Link rel="noopener" scroll={false} target="_self" href="#projects">
             Projects
           </Link>
-          <Link rel="noopener" scroll={false} target="_self" href="#blog">
-            Blog
-          </Link>
           <Link
             rel="noopener"
             target="_self"
             href="mailto:voraaryan1@gmail.com"
           >
             Contact
+          </Link>
+          <Link rel="noopener" target="_self" href="latexresume.pdf">
+            Resume
           </Link>
         </ul>
       </nav>

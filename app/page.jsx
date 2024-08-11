@@ -61,34 +61,6 @@ export default function Home() {
               <img className={styles.icon} src="linkedin.png"></img>{" "}
             </a>
           </div>
-          {/*
-            <div className={styles.skills}>
-            <ul>
-              Skills
-              <li>
-                <img src="python.svg"></img>
-              </li>
-              <li>
-                <img src="javascript.svg"></img>
-              </li>
-              <li>
-                <img src="java.svg"></img>
-              </li>
-              <li>
-                <img src="C.svg"></img>
-              </li>
-              <li>
-                <img src="react.svg"></img>
-              </li>
-              <li>
-                <img src="html-5.svg"></img>
-              </li>
-              <li>
-                <img src="css-3.svg"></img>
-              </li>
-            </ul>
-          </div>
-            */}
         </div>
       </div>
       <hr></hr>
@@ -117,10 +89,26 @@ export default function Home() {
       </h2>
       <div className={styles.shift2}>
         <div className={styles.tiles}>
+          {" "}
+          <Tile
+            name="Hand Tracking (Research)"
+            imageSrc="handtracking.png"
+            link="https://github.com/Aryan-Vora/handTrackingArvora/tree/main"
+          />
           <Tile
             name="Receipt Scanner"
             imageSrc="receipt-scanner.png"
             link="https://www.squeezeestore.com/"
+          />
+          <Tile
+            name="Pokernow Extension"
+            imageSrc="pokernow.png"
+            link="https://chromewebstore.google.com/detail/pokernow-assistant/kbaibgafcamlpfbhklaigpgemgoifdfe?authuser=1"
+          />
+          <Tile
+            name="AI Notetaker"
+            imageSrc="Notetaker.png"
+            link="https://github.com/Aryan-Vora/Notetaker"
           />
           <Tile
             name="ClassBooster"
@@ -136,11 +124,10 @@ export default function Home() {
             name="Platformer"
             link="https://github.com/Aryan-Vora/Platformer"
           />{" "}
-          <Tile name="Price Compare API" imageSrc="explorations.png" link="" />
           <Tile
-            name="AI Notetaker"
-            imageSrc="Notetaker.png"
-            link="https://github.com/Aryan-Vora/Notetaker"
+            name="Price Compare API"
+            imageSrc="explorations.png"
+            link="https://github.com/Aryan-Vora/Price-Compare"
           />
         </div>
       </div>
