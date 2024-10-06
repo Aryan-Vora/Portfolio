@@ -98,13 +98,14 @@ export default function Home() {
           <Tile
             name="Receipt Scanner"
             imageSrc="receipt-scanner.png"
-            link="https://www.squeezeestore.com/"
+            link="https://github.com/Aryan-Vora/SqueezeeReceiptScanner"
           />
           <Tile
             name="Pokernow Extension"
             imageSrc="pokernow.png"
             link="https://chromewebstore.google.com/detail/pokernow-assistant/kbaibgafcamlpfbhklaigpgemgoifdfe?authuser=1"
           />
+          <Tile name="Emulator" imageSrc="111emulator.png"></Tile>
           <Tile
             name="AI Notetaker"
             imageSrc="Notetaker.png"
@@ -125,7 +126,7 @@ export default function Home() {
             link="https://github.com/Aryan-Vora/Platformer"
           />{" "}
           <Tile
-            name="Price Compare API"
+            name="Price Compare Scraper"
             imageSrc="explorations.png"
             link="https://github.com/Aryan-Vora/Price-Compare"
           />
