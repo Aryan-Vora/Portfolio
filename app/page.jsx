@@ -1,7 +1,7 @@
 "use client";
 import styles from "./page.module.css";
-import {Roboto} from "next/font/google";
-import {Mulish} from "next/font/google";
+import { Roboto } from "next/font/google";
+import { Mulish } from "next/font/google";
 import Tile from "./components/Tile";
 import MediumArticles from "./components/MediumArticles";
 const roboto = Roboto({
@@ -89,7 +89,11 @@ export default function Home() {
       </h2>
       <div className={styles.shift2}>
         <div className={styles.tiles}>
-          {" "}
+          <Tile
+            name="BiteRight"
+            imageSrc="biteright.png"
+            link="https://biteright.co/"
+          />
           <Tile
             name="Hand Tracking (Research)"
             imageSrc="handtracking.png"
