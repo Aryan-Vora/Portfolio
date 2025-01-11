@@ -58,7 +58,7 @@ Tile.propTypes = {
     PropTypes.string,
     PropTypes.arrayOf(PropTypes.string),
   ]).isRequired,
-  link: PropTypes.string.isRequired,
+  link: PropTypes.string,
   description: PropTypes.string,
 };
 

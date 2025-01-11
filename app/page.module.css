@@ -47,7 +47,33 @@
   text-align: left;
   font-size: 1.5rem;
 }
-
+.about {
+  color: black;
+  padding: 15px;
+  border-radius: 15px;
+  width: 60%;
+  margin: 3vh auto 3vh auto;
+  border: 3px solid rgba(0, 0, 0, 0.03);
+}
+.about p {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.showMore {
+  margin-top: 10px;
+  text-align: left;
+}
+.showLess {
+  max-height: 150px;
+  overflow: hidden;
+  text-align: left;
+}
+.toggleButton {
+  color: blue;
+  margin-top: 10px;
+  text-align: left;
+}
 .skills {
   margin-top: 3vh;
 }
@@ -220,9 +246,6 @@
   }
 }
 @media (min-width: 1350px) {
-  .shift {
-    margin-right: 5rem;
-  }
   .shift2 {
     padding-right: 5rem;
   }
