@@ -56,7 +56,7 @@ const MediumArticles = () => {
             rel="noopener noreferrer"
             className={styles.showMoreButton}
           >
-            Visit My Medium
+            Visit My Blog
           </a>
         )}
       </div>
