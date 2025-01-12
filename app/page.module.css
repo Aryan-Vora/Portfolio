@@ -227,6 +227,9 @@
     height: 2rem;
     width: 2rem;
   }
+  .about {
+    width: 80%;
+  }
 }
 @media (max-width: 1350px) {
   .boxContent {
