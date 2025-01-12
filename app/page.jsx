@@ -78,14 +78,13 @@ export default function Home() {
           full-stack development and related fields.
           <br /> <br />
           I’m passionate about building dynamic and impactful software
-          solutions. My interests lie in full-stack development, where I enjoy
-          creating seamless user experiences and robust backend systems. I
-          thrive on working collaboratively and am eager to contribute to
-          projects that are part of something bigger— whether that means solving
-          real-world problems or creating innovative tools that make life
-          easier.
+          solutions. I enjoy creating seamless user experiences and building
+          robust backend systems. I thrive on working collaboratively and am
+          eager to contribute to projects that are part of something bigger—
+          whether that means solving real-world problems or creating innovative
+          tools that make life easier.
           <br /> <br />
-          I have experience working on full-stack projects and am always excited
+          I have experience working on multiple projects and am always excited
           to learn and experiment with new technologies. I’m currently looking
           for summer internships or job opportunities where I can contribute to
           a motivated team, develop my technical skills, and tackle meaningful
