@@ -18,7 +18,12 @@ const MediumArticles = () => {
         if (data.status !== "ok" || !data.items) {
           throw new Error("Failed to fetch articles");
         }
-        setArticles(data.items);
+        const filteredArticles = data.items.filter(
+          (article) =>
+            !article.title.includes("Know Your Audience") &&
+            !article.title.includes("Clarity Over Conciseness")
+        );
+        setArticles(filteredArticles);
       })
       .catch((err) => {
         console.error("Error fetching Medium articles:", err);
