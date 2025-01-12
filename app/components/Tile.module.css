@@ -2,9 +2,8 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 5vh;
-  padding: 10px;
   width: 500px;
-  max-width: 60%;
+  max-width: 80%;
 }
 
 .tile ul {
@@ -24,32 +23,11 @@
   text-align: center;
 }
 .tile img {
-  width: 100%;
-  height: 100%;
   aspect-ratio: 4/3;
 }
 
-.skills {
-  margin-top: 3vh;
-}
-
-.skills ul {
-  font-size: 2rem;
-  font-weight: bold;
-  padding: 0;
-}
-
-.skills li {
-  margin-left: 2vw;
-}
-
-.skills img {
-  height: 2.75rem;
-  width: 2.75rem;
-}
-
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .tile {
-    width: 100%;
+    width: 80vw;
   }
 }
