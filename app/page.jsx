@@ -91,11 +91,11 @@ export default function Home() {
           a motivated team, develop my technical skills, and tackle meaningful
           challenges.
           <br /> <br />
-          When I’m not coding, you can find me at the gym, playing pickleball or
-          volleyball, or gaming with friends. I love staying active and am
-          always up for trying something new. I’m looking forward to connecting
-          with others who share a passion for building cool things and making an
-          impact!
+          When I’m not coding, you can find me at the gym, playing sports
+          (mainly pickleball and volleyball), or gaming with friends. I love
+          staying active and am always open to trying something new. I look
+          forward to connecting with others who share a passion for building
+          cool things and making an impact!
         </p>
         {/* <button className={styles.toggleButton} onClick={toggleShowMore}>
           {showMore ? "Show Less" : "Show More"}
