@@ -16,9 +16,7 @@ const mulish = Mulish({
   variable: "--font-mulish",
 });
 export default function Home() {
-  const [showMore, setShowMore] = useState(true);
-  // Remove showBlog state
-
+  const [showMore, setShowMore] = useState(false);
   const toggleShowMore = () => {
     setShowMore(!showMore);
   };
