@@ -6,15 +6,29 @@ import styles from "./MediumCard.module.css";
 const MediumArticles = () => {
   const [articles, setArticles] = useState([]);
   const [visibleArticles, setVisibleArticles] = useState(3);
-  const MAX_ARTICLES = 10;
+  const [error, setError] = useState(false);
+  const MAX_ARTICLES = 3;
 
   useEffect(() => {
     fetch(
       "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@AryanVora"
     )
       .then((res) => res.json())
-      .then((data) => setArticles(data.items));
+      .then((data) => {
+        if (data.status !== "ok" || !data.items) {
+          throw new Error("Failed to fetch articles");
+        }
+        setArticles(data.items);
+      })
+      .catch((err) => {
+        console.error("Error fetching Medium articles:", err);
+        setError(true);
+      });
   }, []);
+
+  if (error) {
+    return null;
+  }
 
   const showMore = () => {
     setVisibleArticles((prev) => Math.min(prev + 3, MAX_ARTICLES));

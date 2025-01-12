@@ -17,6 +17,7 @@ const mulish = Mulish({
 });
 export default function Home() {
   const [showMore, setShowMore] = useState(true);
+  // Remove showBlog state
 
   const toggleShowMore = () => {
     setShowMore(!showMore);
@@ -153,9 +154,7 @@ export default function Home() {
           />
         </div>
       </div>
-
       <hr></hr>
-
       <h2 id="blog" className={styles.subheader}>
         My Blog
       </h2>
