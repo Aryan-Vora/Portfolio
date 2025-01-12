@@ -54,12 +54,12 @@
   width: 60%;
   max-width: 800px;
   margin: 3vh auto 3vh auto;
-  border: 3px solid rgba(0, 0, 0, 0.03);
 }
 .about p {
   display: flex;
   flex-direction: column;
   margin: auto;
+  text-align: center;
 }
 .showMore {
   margin-top: 10px;

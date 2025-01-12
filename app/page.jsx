@@ -70,7 +70,8 @@ export default function Home() {
         About Me
       </h2>
       <div className={styles.about}>
-        <p className={showMore ? styles.showMore : styles.showLess}>
+        {/* <p className={showMore ? styles.showMore : styles.showLess}> */}
+        <p>
           Hello! I’m a student at the University of California, Santa Cruz,
           working towards a B.S. in Computer Science. I’m on track to graduate
           early in June 2025 and am excited to explore opportunities in
@@ -96,9 +97,9 @@ export default function Home() {
           with others who share a passion for building cool things and making an
           impact!
         </p>
-        <button className={styles.toggleButton} onClick={toggleShowMore}>
+        {/* <button className={styles.toggleButton} onClick={toggleShowMore}>
           {showMore ? "Show Less" : "Show More"}
-        </button>
+        </button> */}
       </div>
       <h2 id="projects" className={styles.subheader}>
         Projects
