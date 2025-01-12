@@ -24,17 +24,6 @@
   color: black;
 }
 
-.card {
-  width: 40vh;
-  height: 30vh;
-}
-.face {
-  margin-bottom: 5vh;
-  margin-top: 5vh;
-  width: 40vh;
-  height: 40vh;
-}
-
 .icon {
   margin-top: 4vh;
   margin-bottom: 4vh;
@@ -61,20 +50,7 @@
   margin: auto;
   text-align: center;
 }
-.showMore {
-  margin-top: 10px;
-  text-align: left;
-}
-.showLess {
-  max-height: 150px;
-  overflow: hidden;
-  text-align: left;
-}
-.toggleButton {
-  color: blue;
-  margin-top: 10px;
-  text-align: left;
-}
+
 .skills {
   margin-top: 3vh;
 }
@@ -121,78 +97,20 @@
   display: flex;
   justify-content: center;
 }
-.video {
-  margin-top: 3vh;
-  width: 40vh;
-  height: 30vh;
-  margin-bottom: 3vh;
-  aspect-ratio: 4/3;
-}
-.slideshow {
-  position: relative;
-  width: 40vh;
-}
-.slide {
-  margin-top: 3vh;
-  height: 30vh;
-  margin-bottom: 3vh;
-}
-
-.buttonRight {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #555;
-  color: white;
-  padding: 0.5rem 1rem;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-.buttonRight:hover {
-  background-color: black;
-}
-.buttonLeft {
-  position: absolute;
-  top: 50%;
-  left: 90%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #555;
-  color: white;
-  padding: 0.5rem 1rem;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-.buttonLeft:hover {
-  background-color: black;
-}
-
-.tile {
+.tilesContainer {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  margin-bottom: 5vh;
-  padding: 10px;
-  margin-left: 3vw;
-  margin-right: 3vw;
-  width: 40vh;
-  aspect-ratio: 4/3;
-}
-.tile h2 {
-  font-size: 2rem;
-  color: black;
-  text-align: center;
-}
-.tiles {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 45vh);
-  grid-row-gap: 0.5em;
-  grid-column-gap: 1em; /*center the flexbox*/
   justify-content: center;
 }
+
+.tiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  max-width: 1032px;
+  justify-content: center;
+}
+
 .footerDescription {
   max-width: 70vw;
 }
@@ -240,17 +158,5 @@
   }
   .cardgenBox p {
     text-align: center;
-  }
-}
-@media (max-width: 1200px) {
-  .card,
-  .face,
-  .boxContent2 {
-    display: none;
-  }
-}
-@media (min-width: 1350px) {
-  .shift2 {
-    padding-right: 5rem;
   }
 }

@@ -3,10 +3,8 @@
   flex-direction: column;
   margin-bottom: 5vh;
   padding: 10px;
-  margin-left: 3vw;
-  margin-right: 3vw;
-  width: 40vh;
-  aspect-ratio: 4/3;
+  width: 500px;
+  max-width: 60%;
 }
 
 .tile ul {
@@ -18,59 +16,17 @@
   color: black;
   text-align: center;
 }
-
-.slideshow {
-  position: relative;
-  width: 40vh;
-  z-index: -1;
+.tile a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
 }
-
-.slide {
-  margin-top: 3vh;
-  height: 30vh;
-  margin-bottom: 3vh;
-}
-.video {
-  margin-top: 3vh;
-  width: 40vh;
-  height: 30vh;
-  margin-bottom: 3vh;
+.tile img {
+  width: 100%;
+  height: 100%;
   aspect-ratio: 4/3;
-}
-.buttonRight {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #555;
-  color: white;
-  padding: 0.5rem 1rem;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.buttonRight:hover {
-  background-color: black;
-}
-
-.buttonLeft {
-  position: absolute;
-  top: 50%;
-  left: 90%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #555;
-  color: white;
-  padding: 0.5rem 1rem;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.buttonLeft:hover {
-  background-color: black;
 }
 
 .skills {
@@ -91,10 +47,9 @@
   height: 2.75rem;
   width: 2.75rem;
 }
-.tile a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.5rem;
-  font-weight: 400;
-  text-align: center;
+
+@media (max-width: 600px) {
+  .tile {
+    width: 100%;
+  }
 }

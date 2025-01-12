@@ -16,10 +16,6 @@ const mulish = Mulish({
   variable: "--font-mulish",
 });
 export default function Home() {
-  const [showMore, setShowMore] = useState(false);
-  const toggleShowMore = () => {
-    setShowMore(!showMore);
-  };
   return (
     <main className={`${mulish.className}`}>
       <meta
@@ -65,12 +61,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <hr></hr>
+      <hr />
       <h2 id="about" className={styles.subheader}>
         About Me
       </h2>
       <div className={styles.about}>
-        {/* <p className={showMore ? styles.showMore : styles.showLess}> */}
         <p>
           Hello! I’m a student at the University of California, Santa Cruz,
           working towards a B.S. in Computer Science. I’m on track to graduate
@@ -96,14 +91,12 @@ export default function Home() {
           forward to connecting with others who share a passion for building
           cool things and making an impact!
         </p>
-        {/* <button className={styles.toggleButton} onClick={toggleShowMore}>
-          {showMore ? "Show Less" : "Show More"}
-        </button> */}
       </div>
+      <hr />
       <h2 id="projects" className={styles.subheader}>
         Projects
       </h2>
-      <div className={styles.shift2}>
+      <div className={styles.tilesContainer}>
         <div className={styles.tiles}>
           <Tile
             name="BiteRight"
@@ -133,11 +126,7 @@ export default function Home() {
           />
           <Tile
             name="ClassBooster"
-            imageSrc={[
-              "ClassBoosterHome.png",
-              "ClassBooster.png",
-              "ClassBoosterDash.png",
-            ]}
+            imageSrc="ClassBoosterHome.png"
             link="https://github.com/anshgupta1234/WHS-CS-ClassBooster"
           />
           <Tile
@@ -152,12 +141,12 @@ export default function Home() {
           />
         </div>
       </div>
-      <hr></hr>
+
+      <hr />
       <h2 id="blog" className={styles.subheader}>
         My Blog
       </h2>
       <MediumArticles />
-
       <div className={styles.footer}>
         <h1 className={`${roboto.className}`}>Aryan Vora</h1>
         <div className={styles.footerDescription}>

@@ -89,18 +89,18 @@
 
 @media (max-width: 768px) {
   .card {
-    flex-direction: column; /* Stack image and text on top of each other on smaller screens */
-    width: 70%; /* Increase width to fit smaller screens */
+    flex-direction: column;
+    width: 70%;
     margin: 20px auto;
     padding-bottom: 20px;
   }
 
   .articleImage {
-    width: 100%; /* Allow the image to scale with the container */
+    width: 100%;
     height: 30vh;
     min-width: unset;
     min-height: unset;
-    border-radius: 8px; /* Adjust border-radius to only the top corners */
+    border-radius: 8px;
   }
 
   .textSection {
@@ -121,26 +121,21 @@
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .card {
-    width: 85%; /* Adjust the width for tablets */
+    width: 85%;
   }
 
   .articleImage {
     width: 35vh;
     height: 26vh;
   }
-
-  /* You can add more styles for tablet-specific adjustments here */
 }
 
-/* Large Screen Styles */
 @media (min-width: 1025px) {
   .card {
-    width: 75%; /* Adjust the width for large screens */
+    width: 75%;
   }
 
   .articleImage {
-    max-width: 250px; /* Adjust the max width for larger screens if necessary */
+    max-width: 250px;
   }
-
-  /* You can add more styles for large screen adjustments here */
 }
