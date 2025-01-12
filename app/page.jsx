@@ -4,6 +4,7 @@ import { Roboto } from "next/font/google";
 import { Mulish } from "next/font/google";
 import Tile from "./components/Tile";
 import { useState } from "react";
+import MediumArticles from "./components/MediumArticles";
 const roboto = Roboto({
   weight: ["900"],
   subsets: ["latin"],
@@ -152,14 +153,14 @@ export default function Home() {
           />
         </div>
       </div>
-      {/*
+
       <hr></hr>
-      
+
       <h2 id="blog" className={styles.subheader}>
         My Blog
       </h2>
       <MediumArticles />
-*/}
+
       <div className={styles.footer}>
         <h1 className={`${roboto.className}`}>Aryan Vora</h1>
         <div className={styles.footerDescription}>

@@ -1,8 +1,12 @@
-import React, {useState, useEffect} from "react";
-import {Row, Col} from "reactstrap";
+import React, { useState, useEffect } from "react";
+import { Row, Col } from "reactstrap";
 import MediumCard from "./MediumCard";
+import styles from "./MediumCard.module.css";
+
 const MediumArticles = () => {
   const [articles, setArticles] = useState([]);
+  const [visibleArticles, setVisibleArticles] = useState(3);
+  const MAX_ARTICLES = 10;
 
   useEffect(() => {
     fetch(
@@ -12,14 +16,32 @@ const MediumArticles = () => {
       .then((data) => setArticles(data.items));
   }, []);
 
+  const showMore = () => {
+    setVisibleArticles((prev) => Math.min(prev + 3, MAX_ARTICLES));
+  };
+
   return (
-    <Row>
-      {articles.map((article, index) => (
-        <Col key={index}>
-          <MediumCard article={article} />
-        </Col>
+    <div>
+      {articles.slice(0, visibleArticles).map((article, index) => (
+        <MediumCard key={index} article={article} />
       ))}
-    </Row>
+      <div className={styles.buttonContainer}>
+        {visibleArticles < Math.min(articles.length, MAX_ARTICLES) ? (
+          <button className={styles.showMoreButton} onClick={showMore}>
+            Show More
+          </button>
+        ) : (
+          <a
+            href="https://medium.com/@AryanVora"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.showMoreButton}
+          >
+            Visit My Medium
+          </a>
+        )}
+      </div>
+    </div>
   );
 };
 
