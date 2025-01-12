@@ -30,7 +30,7 @@ export default function Home() {
       <div id="home" className={styles.cardgenBox}>
         <div className={styles.boxContent}>
           <h1 className={`${roboto.className}`}>Hi, I'm Aryan Vora</h1>
-          <p>Full-stack developer based in Fremont, CA. </p>
+          <p>Aspiring Full-stack developer based in Fremont, CA. </p>
           <div className={styles.resume}>
             <a
               href="https://github.com/Aryan-Vora"
