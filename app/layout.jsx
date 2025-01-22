@@ -8,7 +8,7 @@ export const metadata = {
   description:
     "Aryan Vora's portfolio showcasing full-stack development projects, software engineering skills, and tech internships.",
   keywords:
-    'full-stack developer, software engineer, tech internships, web development, backend, frontend, UC Santa Cruz',
+    'full-stack developer, software engineer, tech internships, web development, backend, frontend, UC Santa Cruz, AI, machine learning, software solutions',
 };
 
 export default function RootLayout({ children }) {
