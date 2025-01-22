@@ -66,9 +66,9 @@ export default function Home() {
         </div>
       </div>
       <hr />
-      <h1 id="about" className={styles.subheader}>
+      <h2 id="about" className={styles.subheader}>
         About Me
-      </h1>
+      </h2>
       <div className={styles.about}>
         <p>
           I’m Aryan Vora, a Computer Science student at UC Santa Cruz,
@@ -101,9 +101,9 @@ export default function Home() {
         </p>
       </div>
       <hr />
-      <h1 id="projects" className={styles.subheader}>
+      <h2 id="projects" className={styles.subheader}>
         Projects
-      </h1>
+      </h2>
       <div className={styles.tilesContainer}>
         <div className={styles.tiles}>
           <Tile
@@ -151,12 +151,12 @@ export default function Home() {
       </div>
 
       <hr />
-      <h1 id="blog" className={styles.subheader}>
+      <h2 id="blog" className={styles.subheader}>
         My Blog
-      </h1>
+      </h2>
       <MediumArticles />
       <div className={styles.footer}>
-        <h1 className={`${roboto.className}`}>Aryan Vora</h1>
+        <h2 className={`${roboto.className}`}>Aryan Vora</h2>
         <div className={styles.footerDescription}>
           <p>
             A full-stack developer seeking opportunities to leverage my skills

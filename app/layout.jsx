@@ -6,12 +6,20 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata = {
   title: "Aryan Vora's Portfolio",
   description:
-    'I’m Aryan Vora, a Computer Science student at UC Santa Cruz, graduating early in June 2025. Passionate about full-stack development, I’m seeking roles to contribute and tackle meaningful problems.',
+    "Aryan Vora's portfolio showcasing full-stack development projects, software engineering skills, and tech internships.",
+  keywords:
+    'full-stack developer, software engineer, tech internships, web development, backend, frontend, UC Santa Cruz',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content={metadata.description} />
+        <meta name="keywords" content={metadata.keywords} />
+      </head>
       <body suppressHydrationWarning={true}>
         <Navbar />
         {children}
