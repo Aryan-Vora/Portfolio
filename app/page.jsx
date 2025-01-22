@@ -1,19 +1,19 @@
-"use client";
-import styles from "./page.module.css";
-import { Roboto } from "next/font/google";
-import { Mulish } from "next/font/google";
-import Tile from "./components/Tile";
-import { useState } from "react";
-import MediumArticles from "./components/MediumArticles";
+'use client';
+import styles from './page.module.css';
+import { Roboto } from 'next/font/google';
+import { Mulish } from 'next/font/google';
+import Tile from './components/Tile';
+import { useState } from 'react';
+import MediumArticles from './components/MediumArticles';
 const roboto = Roboto({
-  weight: ["900"],
-  subsets: ["latin"],
-  variable: "--font-roboto",
+  weight: ['900'],
+  subsets: ['latin'],
+  variable: '--font-roboto',
 });
 const mulish = Mulish({
-  weight: ["500"],
-  subsets: ["latin"],
-  variable: "--font-mulish",
+  weight: ['500'],
+  subsets: ['latin'],
+  variable: '--font-mulish',
 });
 export default function Home() {
   return (
@@ -32,8 +32,9 @@ export default function Home() {
               href="https://github.com/Aryan-Vora"
               className="mr-10"
               target="_blank"
+              alt="My GitHub profile"
             >
-              <img className={styles.icon} src="github-icon.svg"></img>{" "}
+              <img className={styles.icon} src="github-icon.svg"></img>{' '}
             </a>
             <a href="latexresume.pdf" target="_blank">
               <img
@@ -42,35 +43,42 @@ export default function Home() {
                 rel="noreferrer noopener"
                 title="Resume"
                 target="_blank"
-              ></img>{" "}
+                alt="Resume"
+              ></img>{' '}
             </a>
             <a
               href="https://medium.com/@AryanVora"
               className="ml-10"
               target="_blank"
+              alt="My medium blog"
             >
-              <img className={styles.icon} src="medium.png"></img>{" "}
+              <img className={styles.icon} src="medium.png"></img>{' '}
             </a>
             <a
               href="https://www.linkedin.com/in/aryanvora1/"
               className="ml-10"
               target="_blank"
+              alt="My LinkedIn profile"
             >
-              <img className={styles.icon} src="linkedin.png"></img>{" "}
+              <img className={styles.icon} src="linkedin.png"></img>{' '}
             </a>
           </div>
         </div>
       </div>
       <hr />
-      <h2 id="about" className={styles.subheader}>
+      <h1 id="about" className={styles.subheader}>
         About Me
-      </h2>
+      </h1>
       <div className={styles.about}>
         <p>
-          Hello! I’m a student at the University of California, Santa Cruz,
-          working towards a B.S. in Computer Science. I’m on track to graduate
-          early in June 2025 and am excited to explore opportunities in
-          full-stack development and related fields.
+          I’m Aryan Vora, a Computer Science student at UC Santa Cruz,
+          graduating early in June 2025. Passionate about full-stack
+          development, I’m seeking software engineering roles, internships in
+          tech, and opportunities to work on cutting-edge technologies and
+          innovative software solutions. I specialize in backend development,
+          frontend technologies, and web application development. I look forward
+          to contributing to technology-driven projects and solving complex
+          challenges in the software industry.
           <br /> <br />
           I’m passionate about building dynamic and impactful software
           solutions. I enjoy creating seamless user experiences and building
@@ -93,9 +101,9 @@ export default function Home() {
         </p>
       </div>
       <hr />
-      <h2 id="projects" className={styles.subheader}>
+      <h1 id="projects" className={styles.subheader}>
         Projects
-      </h2>
+      </h1>
       <div className={styles.tilesContainer}>
         <div className={styles.tiles}>
           <Tile
@@ -133,7 +141,7 @@ export default function Home() {
             imageSrc="platformer.png"
             name="Platformer"
             link="https://github.com/Aryan-Vora/Platformer"
-          />{" "}
+          />{' '}
           <Tile
             name="Price Compare Scraper"
             imageSrc="explorations.png"
@@ -143,9 +151,9 @@ export default function Home() {
       </div>
 
       <hr />
-      <h2 id="blog" className={styles.subheader}>
+      <h1 id="blog" className={styles.subheader}>
         My Blog
-      </h2>
+      </h1>
       <MediumArticles />
       <div className={styles.footer}>
         <h1 className={`${roboto.className}`}>Aryan Vora</h1>
