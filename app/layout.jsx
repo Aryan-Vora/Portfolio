@@ -7,8 +7,7 @@ export const metadata = {
   title: "Aryan Vora's Portfolio",
   description:
     "Aryan Vora's portfolio showcasing full-stack development projects, software engineering skills, and tech internships.",
-  keywords:
-    'full-stack developer, software engineer, tech internships, web development, backend, frontend, UC Santa Cruz, AI, machine learning, software solutions',
+  
 };
 
 export default function RootLayout({ children }) {
@@ -18,7 +17,6 @@ export default function RootLayout({ children }) {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content={metadata.description} />
-        <meta name="keywords" content={metadata.keywords} />
       </head>
       <body suppressHydrationWarning={true}>
         <Navbar />
