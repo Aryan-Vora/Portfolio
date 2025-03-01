@@ -106,25 +106,27 @@ export default function Home() {
       </h2>
       <div className={styles.tilesContainer}>
         <div className={styles.tiles}>
-          <Tile
-            name="BiteRight"
-            imageSrc="biteright.png"
-            link="https://biteright.co/"
+        <Tile
+            name="Receipt Scanner"
+            imageSrc="receipt-scanner.png"
+            link="https://github.com/Aryan-Vora/SqueezeeReceiptScanner"
           />
+       
           <Tile
             name="Hand Tracking (Research)"
             imageSrc="handtracking.png"
             link="https://github.com/Aryan-Vora/handTrackingArvora/tree/main"
           />
-          <Tile
-            name="Receipt Scanner"
-            imageSrc="receipt-scanner.png"
-            link="https://github.com/Aryan-Vora/SqueezeeReceiptScanner"
-          />
+       
           <Tile
             name="Pokernow Extension"
             imageSrc="pokernow.png"
             link="https://chromewebstore.google.com/detail/pokernow-assistant/kbaibgafcamlpfbhklaigpgemgoifdfe?authuser=1"
+          />
+          <Tile
+            name="BiteRight"
+            imageSrc="biteright.png"
+            link="https://biteright.co/"
           />
           <Tile name="Emulator" imageSrc="111emulator.png"></Tile>
           <Tile
